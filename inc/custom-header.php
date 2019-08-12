@@ -11,6 +11,9 @@
  * @package Pentamint_WP_Theme
  */
 
+// Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
+
 /**
  * Set up the WordPress core custom header feature.
  *

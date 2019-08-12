@@ -1,12 +1,9 @@
 <?php
 /**
- * The template for displaying all pages
+ * The template for front page with no sidebar
  *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
- *
+ * This is the template that displays only on static front page.
+ * 
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package Pentamint_WP_Theme
@@ -18,8 +15,8 @@ defined( 'ABSPATH' ) || exit;
 get_header();
 ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+	<div id="primary" class="content-area" style="margin:0">
+		<main id="main" class="site-main" style="margin:0">
 
 		<?php
 		while ( have_posts() ) :
@@ -36,10 +33,9 @@ get_header();
 		?>
 
 		</main><!-- #main -->
-
-		<?php get_sidebar(); ?>
-
 	</div><!-- #primary -->
-
+	
 <?php
 get_footer();
+
+
