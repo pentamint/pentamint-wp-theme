@@ -15,9 +15,14 @@ if (!function_exists('pentamint_wp_theme_menu_setup')) :
 
     function pentamint_wp_theme_menu_setup()
     {
-        // Secondary Nav Menu
+        // Top Header Left Nav Menu
         register_nav_menus(array(
-            'secondary' => esc_html__('Secondary Menu', 'pentamint_wp_theme'),
+            'top-header-left' => esc_html__('Top Header Left Menu', 'pentamint_wp_theme'),
+        ));
+
+        // Top Header Right Nav Menu
+        register_nav_menus(array(
+            'top-header-right' => esc_html__('Top Header Right Menu', 'pentamint_wp_theme'),
         ));
 
         // Footer Nav Menu
