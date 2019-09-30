@@ -23,7 +23,7 @@ get_header();
         <div class="container">
             <h1>키워드 <span class="keyword">&ldquo;<?php the_search_query(); ?>&rdquo;</span> 검색결과</h1>
             <?php if ($results_count == '' || $results_count == 0) { // No Results ?>
-                <p><span class="label label-danger"><?php _e('앗! 입력하신 키워드로 검색된 결과가 없습니다..','pentamint_wp_theme'); ?></span>&nbsp;<br><?php _e('철자와 띄어쓰기를 확인해 보거나 다른 검색어를 입력해 보시는건 어떨까요?','pentamint_wp_theme'); ?></p>
+                <p><span class="label label-danger"><?php _e('입력하신 키워드로 검색된 결과가 없습니다..','pentamint_wp_theme'); ?></span>&nbsp;<br><?php _e('철자와 띄어쓰기를 확인해 보거나 다른 검색어를 입력해 보시는건 어떨까요?','pentamint_wp_theme'); ?></p>
             <?php } else { // Results Found ?>
                 <p><span class="label label-success"><?php echo $results_count . __(' 개의 검색결과','pentamint_wp_theme'); ?></span></p>
             <?php } // end results check ?>
@@ -61,7 +61,7 @@ get_header();
 
                 <?php else : // No Results ?>
 
-                    <p><?php _e('죄송합니다. 고객님께서 입력하신 키워드로 검색된 결과가 없습니다..<br>아래 최신글 목록과 사이트맵을 통해 찾으시는 컨텐츠를 간편하게 찾아보세요.','pentamint_wp_theme'); ?></p>
+                    <p><?php _e('죄송합니다. 입력하신 키워드로 검색된 결과가 없습니다..<br>아래 최신글 목록과 사이트맵을 통해 찾으시는 컨텐츠를 간편하게 찾아보세요.','pentamint_wp_theme'); ?></p>
                     <div class="row">
                         <div class="col-md-6 posts">
                             <h3><?php _e('최신글 목록','pentamint_wp_theme'); ?></h3>
